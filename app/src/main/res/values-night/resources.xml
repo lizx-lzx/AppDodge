@@ -1,0 +1,11 @@
+<resources>
+    <color name="canvas">#FAF9F5</color><color name="surface">#FDFCF9</color><color name="ink">#2E352C</color><color name="muted">#5F685B</color><color name="accent">#4C6242</color>
+    <color name="disabled_control">#DFE2D8</color>
+    <color name="on_accent">#FAF9F5</color>
+    <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item><item name="android:colorAccent">@color/accent</item>
+        <item name="android:windowLightStatusBar">true</item><item name="android:statusBarColor">@color/canvas</item>
+        <item name="android:navigationBarColor">@color/daily_canvas</item><item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowActionModeOverlay">true</item><item name="android:windowBackground">@color/canvas</item>
+    </style>
+</resources>

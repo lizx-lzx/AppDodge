@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="dev.local.appdodge.test">
+    <uses-sdk android:minSdkVersion="31" android:targetSdkVersion="35" />
+    <application android:label="AppDodge tests" />
+    <instrumentation android:name="dev.local.appdodge.RuleLockDeviceTests" android:targetPackage="dev.local.appdodge" android:label="AppDodge isolated rule lock tests" />
+</manifest>

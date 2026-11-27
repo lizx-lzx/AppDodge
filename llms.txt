@@ -1,0 +1,27 @@
+# AppDodge (反人性软件)
+
+> Open-source, offline-first Android app blocker and digital wellbeing tool that keeps your stock launcher and breaks mindless phone habits with 12 customizable mindful friction effects, probabilistic interventions, usage caps, and 24-hour anti-relapse cooldowns.
+
+## Quick Facts
+- Platform: Android 12+ (API 31+, target SDK 35)
+- License: MIT (third-party notices in THIRD_PARTY_NOTICES.md)
+- Privacy: 100% local/offline, no accounts, no cloud sync, no telemetry, no ads. `INTERNET` is only used for optional localhost (`127.0.0.1`) wireless debugging pairing.
+- Root required: No
+- Custom launcher required: No (works directly over stock Android home screen icons via Accessibility Service, plus foreground detection for notifications and recents)
+- UI language: Simplified Chinese (docs available in Chinese and English)
+- Comparable tools / alternatives for: one sec, AppBlock, StayFree, Minimalist Phone, Android Digital Wellbeing
+
+## Key Capabilities
+1. **Rest Schedules + Daily Probability (0%–100%)**: Hard block during multiple custom rest windows (overnight supported); independent probabilistic roll during remaining hours.
+2. **12 Mindful Friction Effects**: Fake loading (15s/30s), intermittent touch freeze, tunnel-vision narrowing, forced media mute, random exit timer (0–1m or 3–10m), delayed open then exit, open then exit, auto redirect to alternative app, suggest alternative, instant lock, delayed lock, desktop reminder; supports single or random 2–3 compatible combinations.
+3. **Usage Caps & Local Reports**: Per-session limit, daily cap, mandatory cool-off rest between sessions, and local block reports (pre-open blocks vs. post-use exits and average pre-exit duration) without requiring Usage Access permission.
+4. **Anti-Relapse Mechanisms**: 24-hour cooldown queue for rule edits/deletions/pauses, daily management window (app settings closed outside configured hours), and 15-minute quick rule lock.
+5. **Optional Silent Background Force-Stop (No Root)**: Built-in localhost Android Wireless Debugging pairing (TLS identity in Android Keystore) or Shizuku v13+ compatibility. Only acts on rule-triggered exits.
+
+## Docs & Entry Points
+- Chinese README: README.md
+- English README: README_EN.md
+- Friction Design Boundaries: docs/反馈篮-哪些反馈不该用.md
+- Offline Build Script: scripts/build.py (`python3 scripts/build.py`)
+- Unit Tests: scripts/test.sh (`sh scripts/test.sh`)
+- Third-Party Notices: THIRD_PARTY_NOTICES.md

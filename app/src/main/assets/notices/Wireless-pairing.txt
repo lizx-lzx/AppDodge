@@ -1,0 +1,5 @@
+AppDodge pairs on the phone using libadb-android 3.1.1 (2021–2025 Muntashir Al-Islam; Apache 2.0 option, with upstream BSD and MIT portions). AppDodge changed TLS-only handling, cleanup, logging, local stream acknowledgement and guarded dispatch. Source: https://github.com/MuntashirAkon/libadb-android/tree/3.1.1
+
+TLS: Conscrypt 2.5.3 (Apache 2.0; includes BoringSSL and Netty notices).
+Cryptography: Bouncy Castle 1.81 lightweight primitives, MIT-style Bouncy Castle license.
+Pairing: spake2-android 2.2.1, Copyright 2021 Muntashir Al-Islam, LGPL v3, with native spake2-c and notices in its source. No changes to this library. You may replace, rebuild and debug this library and relink the app. See LGPLv3, GPLv3, and the corresponding source and build instructions in app/libs/localadb in the AppDodge project. Sources: https://github.com/MuntashirAkon/spake2-java/tree/2.2.1 and https://github.com/MuntashirAkon/spake2-c/tree/0d15933e5ba3e662cb01245a7ac0dc9fca3eac31.

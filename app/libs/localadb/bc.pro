@@ -1,0 +1,14 @@
+-dontwarn **
+-dontobfuscate
+-dontoptimize
+-keepattributes InnerClasses,EnclosingMethod,Exceptions
+-keep class org.bouncycastle.crypto.InvalidCipherTextException { *; }
+-keep class org.bouncycastle.crypto.digests.SHA256Digest { *; }
+-keep class org.bouncycastle.crypto.engines.AESEngine { *; }
+-keep class org.bouncycastle.crypto.generators.HKDFBytesGenerator { *; }
+-keep class org.bouncycastle.crypto.modes.GCMBlockCipher { *; }
+-keep class org.bouncycastle.crypto.modes.GCMModeCipher { *; }
+-keep class org.bouncycastle.crypto.params.AEADParameters { *; }
+-keep class org.bouncycastle.crypto.params.HKDFParameters { *; }
+-keep class org.bouncycastle.crypto.params.KeyParameter { *; }
+-keep class org.bouncycastle.util.encoders.Base64 { *; }

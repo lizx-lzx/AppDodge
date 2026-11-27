@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="dev.local.appdodge" android:versionCode="43" android:versionName="0.25.5">
+    <uses-sdk android:minSdkVersion="31" android:targetSdkVersion="35" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="moe.shizuku.manager.permission.API_V23" />
+    <queries>
+        <package android:name="moe.shizuku.privileged.api" />
+        <intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent>
+        <intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.HOME"/></intent>
+        <intent><action android:name="android.intent.action.DIAL"/></intent>
+        <intent><action android:name="android.settings.SETTINGS"/></intent>
+        <intent><action android:name="android.settings.ACCESSIBILITY_SETTINGS"/></intent>
+    </queries>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_app" android:theme="@style/DailyAppTheme" android:allowBackup="false" android:supportsRtl="true">
+        <meta-data android:name="moe.shizuku.client.V3_SUPPORT" android:value="true"/>
+        <!-- Official endpoint for receiving Shizuku's binder. No AppDodge actions are exported. -->
+        <provider android:name="rikka.shizuku.ShizukuProvider" android:authorities="dev.local.appdodge.shizuku"
+            android:exported="true" android:multiprocess="false" android:permission="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+        <!-- One-time localhost-shell attestation only. No settings, commands or user data. -->
+        <provider android:name=".LocalAdbProof" android:authorities="dev.local.appdodge.localpair"
+            android:permission="android.permission.DUMP" android:exported="true"/>
+        <receiver android:name=".StopPairingReply" android:exported="false"/>
+        <activity android:name=".MainActivity" android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout" android:exported="true" android:launchMode="singleTask" android:excludeFromRecents="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity>
+        <service android:name=".NativeRestService" android:exported="true"
+            android:label="@string/native_guard_label" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter><action android:name="android.accessibilityservice.AccessibilityService"/></intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/native_rest_service"/>
+        </service>
+    </application>
+</manifest>

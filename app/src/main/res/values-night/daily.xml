@@ -1,0 +1,53 @@
+<resources>
+    <!-- Pure Daylight Policy (v2): keep consistent warm paper regardless of system night mode -->
+    <color name="daily_canvas">#F3F1EA</color>
+    <color name="daily_paper">#FAF9F5</color>
+    <color name="daily_sheet">#FDFCF9</color>
+    <color name="daily_ink">#2E352C</color>
+    <color name="daily_muted">#5F685B</color>
+    <color name="daily_faint">#858D80</color>
+    <color name="daily_line">#DFE2D8</color>
+    <color name="daily_line_strong">#B6BEA9</color>
+    <color name="daily_green">#4C6242</color>
+    <color name="daily_tint">#E6EBDF</color>
+    <color name="daily_warm">#F5E5E2</color>
+    <color name="daily_warm_ink">#A2463D</color>
+    <color name="daily_island_bg">#2B3529</color>
+    <color name="daily_island_warn_bg">#8F3D35</color>
+    <color name="daily_island_fg">#FAF9F5</color>
+    <color name="daily_island_muted">#B8FAF9F5</color>
+    <color name="daily_island_line">#2EFAF9F5</color>
+    <color name="daily_island_dot">#C4D4BA</color>
+
+    <style name="DailyAppTheme" parent="AppTheme">
+        <item name="android:colorAccent">@color/daily_green</item>
+        <item name="android:windowBackground">@color/daily_paper</item>
+        <item name="android:statusBarColor">@color/daily_paper</item>
+        <item name="android:navigationBarColor">@color/daily_paper</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:textColorPrimary">@color/daily_ink</item>
+        <item name="android:textColorSecondary">@color/daily_muted</item>
+        <item name="android:alertDialogTheme">@style/DailyDialogTheme</item>
+        <item name="android:datePickerDialogTheme">@style/DailyDatePickerTheme</item>
+    </style>
+
+    <style name="DailyDialogTheme" parent="android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorAccent">@color/daily_green</item>
+        <item name="android:windowBackground">@drawable/daily_dialog_surface</item>
+        <item name="android:colorBackground">@color/daily_sheet</item>
+        <item name="android:colorBackgroundFloating">@color/daily_sheet</item>
+        <item name="android:textColorPrimary">@color/daily_ink</item>
+        <item name="android:textColorSecondary">@color/daily_muted</item>
+        <item name="android:backgroundDimAmount">0.24</item>
+    </style>
+
+    <style name="DailyDatePickerTheme" parent="android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorAccent">@color/daily_green</item>
+        <item name="android:colorBackground">@color/daily_sheet</item>
+        <item name="android:colorBackgroundFloating">@color/daily_sheet</item>
+        <item name="android:textColorPrimary">@color/daily_ink</item>
+        <item name="android:textColorSecondary">@color/daily_muted</item>
+        <item name="android:backgroundDimAmount">0.24</item>
+    </style>
+</resources>

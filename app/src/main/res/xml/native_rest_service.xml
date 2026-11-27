@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/native_guard_description"
+    android:settingsActivity="dev.local.appdodge.MainActivity"
+    android:accessibilityEventTypes="typeWindowStateChanged|typeWindowContentChanged|typeWindowsChanged|typeViewScrolled"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagReportViewIds|flagIncludeNotImportantViews|flagRetrieveInteractiveWindows"
+    android:notificationTimeout="32"
+    android:canRetrieveWindowContent="true"
+    android:canPerformGestures="true"
+    android:isAccessibilityTool="false" />

@@ -1,0 +1,20 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'dev.local.appdodge'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'dev.local.appdodge'
+        minSdk 31
+        targetSdk 35
+        versionCode 43
+        versionName '0.25.5'
+    }
+    sourceSets.main.java.srcDir 'libs/localadb/src'
+    sourceSets.main.jniLibs.srcDir 'libs/localadb/jni'
+    packagingOptions { jniLibs { useLegacyPackaging true } }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}
+dependencies {
+    implementation fileTree(dir: 'libs/localadb', include: ['*.jar'])
+    implementation fileTree(dir: 'libs/shizuku', include: ['*-13.1.5.jar', 'annotation-1.3.0.jar'])
+}

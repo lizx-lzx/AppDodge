@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">反人性软件</string>
+    <color name="canvas">#FAF9F5</color><color name="surface">#FDFCF9</color><color name="ink">#2E352C</color><color name="muted">#5F685B</color><color name="accent">#4C6242</color>
+    <color name="disabled_control">#DFE2D8</color>
+    <color name="on_accent">#FAF9F5</color>
+    <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item><item name="android:colorAccent">@color/accent</item>
+        <item name="android:windowLightStatusBar">true</item><item name="android:statusBarColor">@color/canvas</item>
+        <item name="android:navigationBarColor">@color/daily_canvas</item><item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowActionModeOverlay">true</item><item name="android:windowBackground">@color/canvas</item>
+    </style>
+    <string name="native_guard_label">原桌面点按保护</string>
+    <string name="native_guard_description">按你的规则识别原桌面图标和前台应用，执行拦截或日常干预。选择锁屏方式时会锁住整部手机；选择消音时也会暂时静音后台音乐。不读取聊天或通知内容。数据留在本机，你可以在系统设置中关闭服务。</string>
+</resources>

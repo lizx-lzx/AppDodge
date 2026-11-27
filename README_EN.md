@@ -11,7 +11,7 @@ Keep your stock Android launcher · 12 mindful friction effects · 24-hour anti-
 ![License MIT](https://img.shields.io/badge/License-MIT-5f6c65?style=flat-square)
 ![Local Only](https://img.shields.io/badge/Privacy-100%25%20Offline-4b6358?style=flat-square)
 
-[简体中文](README.md) · **English**
+[简体中文](README.md) · **English** · [🤖 AI Usage Guide](docs/ai-usage-guide.md)
 
 </div>
 

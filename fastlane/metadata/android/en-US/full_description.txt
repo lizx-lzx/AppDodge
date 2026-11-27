@@ -1,0 +1,10 @@
+AppDodge is a free, open-source (MIT), 100% offline Android app blocker and digital wellbeing tool that works directly with your stock launcher — no root, no custom launcher, no accounts, and no telemetry.
+
+Key features:
+• Keep your stock home screen: Intercepts taps on original launcher icons as well as entries from notifications and recents.
+• Rest schedules & daily probability (0%–100%): Strict blocking during multiple overnight schedules, plus independent probabilistic rolls during remaining hours.
+• 12 mindful friction effects: Fake loading, intermittent touch freeze, tunnel vision narrowing, forced media mute, random exit timer, delayed open then exit, auto redirect, suggest alternative, instant/delayed lock, and more — single or random 2–3 compatible combinations.
+• Session & daily usage caps: Track active foreground time with automatic pause on app switch and optional breaks between rounds.
+• Local block reports: View pre-open blocks, post-use exits, and average duration before exit without requiring Usage Access permission.
+• Anti-relapse protection: 24-hour cooldown queue for rule edits, daily management window, and 15-minute rule lock.
+• Optional silent background force-stop: Built-in localhost Wireless Debugging pairing or Shizuku v13+ support (no root).

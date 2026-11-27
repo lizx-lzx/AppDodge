@@ -21,6 +21,7 @@
 ## Docs & Entry Points
 - Chinese README: README.md
 - English README: README_EN.md
+- AI Usage & Coaching Guide (exact UI paths, rule recipes & troubleshooting): docs/ai-usage-guide.md
 - Friction Design Boundaries: docs/反馈篮-哪些反馈不该用.md
 - Offline Build Script: scripts/build.py (`python3 scripts/build.py`)
 - Unit Tests: scripts/test.sh (`sh scripts/test.sh`)

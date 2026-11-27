@@ -1,0 +1,5 @@
+Initial open-source release v0.25.5:
+- Stock-launcher rest schedules, 0%-100% daily probability, and 12 mindful friction effects
+- Session & daily usage caps with local block reports
+- 24-hour anti-relapse cooldown, daily management window, and 15-minute rule lock
+- Optional no-root silent force-stop via built-in local wireless pairing or Shizuku

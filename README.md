@@ -11,7 +11,7 @@
 ![License MIT](https://img.shields.io/badge/License-MIT-5f6c65?style=flat-square)
 ![Local Only](https://img.shields.io/badge/Privacy-100%25%20%E6%9C%BA%E6%9C%AC%E7%A6%BB%E7%BA%BF-4b6358?style=flat-square)
 
-**简体中文** · [English](README_EN.md)
+**简体中文** · [English](README_EN.md) · [🤖 给 AI 的使用指南](docs/ai-usage-guide.md)
 
 </div>
 
